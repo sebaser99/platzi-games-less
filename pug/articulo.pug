@@ -1,6 +1,7 @@
 html
-	include head.pug
+	include componentes/head.pug
 	body
+		include componentes/header.pug
 		section.intro
 			.intro__imagen: img(src="../images/intro.jpg")
 			.intro__contenido
@@ -22,7 +23,7 @@ html
 			+caja("xbox.jpg", "Xbox", "Conoce las actualizaciones de Game Pass", "A una semana terminado el E3, Microsoft anunció la 1era rotación de juegos para Xbox")
 			+caja("fortnite.jpg", "Fortnite", "Fortnite une fuerzas con Stranger Things", "Portales hacia el Upside Down han aparecido dentro de Fortnite, y aunque no funcionan igual.")
 			+caja("cuphead.jpg", "Cuphead", "Cuphead se atrasa hasta el año 2020", "Los miembros de Studio MDHR revelan la razón detrás del atraso de la fecha de lanzamiento.")
-
+		include componentes/footer.pug
 
 			
 
